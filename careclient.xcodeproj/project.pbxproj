@@ -10,6 +10,11 @@
 		39C8646B77F089E9ADC7E21B /* Pods_careclient_careclientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3F5BBDD105BDE22ED601F2 /* Pods_careclient_careclientUITests.framework */; };
 		3E441595FB549ADC352D2529 /* Pods_careclientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC2DB88CFDD251840A82224 /* Pods_careclientTests.framework */; };
 		49979A800B06D6E4C11C0C72 /* Pods_careclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E271DBD25805B70D7F222D /* Pods_careclient.framework */; };
+		990B8B9E2A1B48C60025A9CF /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8B872A1B48C60025A9CF /* APIRouter.swift */; };
+		990B8BA12A1B48C60025A9CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8B8B2A1B48C60025A9CF /* User.swift */; };
+		990B8BAA2A1B48C70025A9CF /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8B942A1B48C60025A9CF /* AlamofireManager.swift */; };
+		990B8BB22A1B48C70025A9CF /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8B9D2A1B48C60025A9CF /* UserApiService.swift */; };
+		990B8BB42A1B4A810025A9CF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8BB32A1B4A810025A9CF /* Config.swift */; };
 		99B4FB632A1AFAE900CD50E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4FB622A1AFAE900CD50E7 /* AppDelegate.swift */; };
 		99B4FB652A1AFAE900CD50E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4FB642A1AFAE900CD50E7 /* SceneDelegate.swift */; };
 		99B4FB6C2A1AFAEA00CD50E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B4FB6B2A1AFAEA00CD50E7 /* Assets.xcassets */; };
@@ -47,6 +52,11 @@
 		19CFEA4317E4353AF72C2A5A /* Pods-careclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-careclient.release.xcconfig"; path = "Target Support Files/Pods-careclient/Pods-careclient.release.xcconfig"; sourceTree = "<group>"; };
 		253AA3457AB06DAC405E398B /* Pods-careclientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-careclientTests.release.xcconfig"; path = "Target Support Files/Pods-careclientTests/Pods-careclientTests.release.xcconfig"; sourceTree = "<group>"; };
 		80F630EF535253F8E3D2342E /* Pods-careclient-careclientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-careclient-careclientUITests.release.xcconfig"; path = "Target Support Files/Pods-careclient-careclientUITests/Pods-careclient-careclientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		990B8B872A1B48C60025A9CF /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		990B8B8B2A1B48C60025A9CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		990B8B942A1B48C60025A9CF /* AlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		990B8B9D2A1B48C60025A9CF /* UserApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
+		990B8BB32A1B4A810025A9CF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		99B4FB5F2A1AFAE900CD50E7 /* careclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = careclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B4FB622A1AFAE900CD50E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99B4FB642A1AFAE900CD50E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +119,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		990B8B862A1B48C60025A9CF /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				990B8B872A1B48C60025A9CF /* APIRouter.swift */,
+				990B8B882A1B48C60025A9CF /* Models */,
+				990B8B942A1B48C60025A9CF /* AlamofireManager.swift */,
+				990B8B952A1B48C60025A9CF /* ApiService */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		990B8B882A1B48C60025A9CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				990B8B8B2A1B48C60025A9CF /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		990B8B952A1B48C60025A9CF /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				990B8B9D2A1B48C60025A9CF /* UserApiService.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
 		99B4FB562A1AFAE900CD50E7 = {
 			isa = PBXGroup;
 			children = (
@@ -161,9 +198,11 @@
 		99B4FB922A1AFBF300CD50E7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				990B8B862A1B48C60025A9CF /* Server */,
 				99B4FBA92A1B13EB00CD50E7 /* Extensions */,
 				99B4FB622A1AFAE900CD50E7 /* AppDelegate.swift */,
 				99B4FB642A1AFAE900CD50E7 /* SceneDelegate.swift */,
+				990B8BB32A1B4A810025A9CF /* Config.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -238,6 +277,7 @@
 				99B4FB5B2A1AFAE900CD50E7 /* Sources */,
 				99B4FB5C2A1AFAE900CD50E7 /* Frameworks */,
 				99B4FB5D2A1AFAE900CD50E7 /* Resources */,
+				F45E40E48D6994613A340352 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +315,7 @@
 				99B4FB7B2A1AFAEA00CD50E7 /* Sources */,
 				99B4FB7C2A1AFAEA00CD50E7 /* Frameworks */,
 				99B4FB7D2A1AFAEA00CD50E7 /* Resources */,
+				9640B95783946E40A5199B7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -423,6 +464,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9640B95783946E40A5199B7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-careclient-careclientUITests/Pods-careclient-careclientUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-careclient-careclientUITests/Pods-careclient-careclientUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-careclient-careclientUITests/Pods-careclient-careclientUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45E40E48D6994613A340352 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-careclient/Pods-careclient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-careclient/Pods-careclient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-careclient/Pods-careclient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -433,10 +508,15 @@
 				99B4FBB22A1B13EB00CD50E7 /* Extension+Codable.swift in Sources */,
 				99B4FBB42A1B13EB00CD50E7 /* Extension+Storyboard.swift in Sources */,
 				99B4FB632A1AFAE900CD50E7 /* AppDelegate.swift in Sources */,
+				990B8BAA2A1B48C70025A9CF /* AlamofireManager.swift in Sources */,
+				990B8BB22A1B48C70025A9CF /* UserApiService.swift in Sources */,
+				990B8BB42A1B4A810025A9CF /* Config.swift in Sources */,
 				99B4FBB72A1B13EB00CD50E7 /* Extension+Obejcts.swift in Sources */,
 				99B4FB652A1AFAE900CD50E7 /* SceneDelegate.swift in Sources */,
+				990B8B9E2A1B48C60025A9CF /* APIRouter.swift in Sources */,
 				99B4FBBC2A1B180100CD50E7 /* HomeViewController.swift in Sources */,
 				99B4FBB62A1B13EB00CD50E7 /* Extension+Views.swift in Sources */,
+				990B8BA12A1B48C60025A9CF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
