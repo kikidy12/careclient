@@ -6,6 +6,8 @@ target 'careclient' do
   use_frameworks!
 
   # Pods for careclient
+  pod 'Alamofire'
+  pod 'Kingfisher'
 
   target 'careclientTests' do
     inherit! :search_paths
