@@ -30,7 +30,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="네이버로그인"/>
                                 <connections>
-                                    <action selector="kakaoLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="acy-C4-N3j"/>
                                     <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2sH-IN-TT7"/>
                                 </connections>
                             </button>
@@ -39,7 +38,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="구글로그인"/>
                                 <connections>
-                                    <action selector="kakaoLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bUR-q7-o61"/>
                                     <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e63-8c-9hq"/>
                                 </connections>
                             </button>
@@ -48,7 +46,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="토스로그인"/>
                                 <connections>
-                                    <action selector="kakaoLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SfC-Ag-Q9H"/>
                                     <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Nnz-BA-AuS"/>
                                 </connections>
                             </button>
