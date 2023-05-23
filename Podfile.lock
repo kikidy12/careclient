@@ -12,6 +12,7 @@ PODS:
   - KakaoSDKUser (2.15.0):
     - KakaoSDKAuth (= 2.15.0)
   - Kingfisher (7.6.2)
+  - naveridlogin-sdk-ios (4.1.6)
 
 DEPENDENCIES:
   - Alamofire
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - KakaoSDKCommon
   - KakaoSDKUser
   - Kingfisher (~> 7.6.2)
+  - naveridlogin-sdk-ios
 
 SPEC REPOS:
   trunk:
@@ -27,6 +29,7 @@ SPEC REPOS:
     - KakaoSDKCommon
     - KakaoSDKUser
     - Kingfisher
+    - naveridlogin-sdk-ios
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
@@ -34,7 +37,8 @@ SPEC CHECKSUMS:
   KakaoSDKCommon: 89d863b7f34398e6fb93a0acb28a204908551a39
   KakaoSDKUser: a997ca5c4c18ece2ab30646ff74841bc29d4399d
   Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  naveridlogin-sdk-ios: cdd34e3585a3d5aaf37c1d84c1f41faba4a25d1a
 
-PODFILE CHECKSUM: aece1ca96f0cdd025c52cf58ca7c1a35876f3b60
+PODFILE CHECKSUM: 34ee32bfc3b109d35c203d19ccef96f39da7559f
 
 COCOAPODS: 1.12.1
