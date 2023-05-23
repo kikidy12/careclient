@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="careclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-M2-CUm">
+                                <rect key="frame" x="140.33333333333334" y="109" width="112.33333333333334" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="카카오로그인"/>
+                                <connections>
+                                    <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mdT-og-arq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQd-kP-Xdi">
+                                <rect key="frame" x="140" y="164" width="113" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="네이버로그인"/>
+                                <connections>
+                                    <action selector="kakaoLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="acy-C4-N3j"/>
+                                    <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2sH-IN-TT7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXD-Xa-qSy">
+                                <rect key="frame" x="147.66666666666666" y="219" width="98" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="구글로그인"/>
+                                <connections>
+                                    <action selector="kakaoLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bUR-q7-o61"/>
+                                    <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e63-8c-9hq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O54-6W-djk">
+                                <rect key="frame" x="147.66666666666666" y="274" width="98" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="토스로그인"/>
+                                <connections>
+                                    <action selector="kakaoLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SfC-Ag-Q9H"/>
+                                    <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Nnz-BA-AuS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oQd-kP-Xdi" firstAttribute="top" secondItem="NIf-M2-CUm" secondAttribute="bottom" constant="20" id="N7l-Qa-Gx8"/>
+                            <constraint firstItem="NIf-M2-CUm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="OZp-1v-Jbq"/>
+                            <constraint firstItem="NIf-M2-CUm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="RUk-qq-r7G"/>
+                            <constraint firstItem="O54-6W-djk" firstAttribute="top" secondItem="MXD-Xa-qSy" secondAttribute="bottom" constant="20" id="Wij-rY-hg7"/>
+                            <constraint firstItem="oQd-kP-Xdi" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="cUq-Cg-QuG"/>
+                            <constraint firstItem="MXD-Xa-qSy" firstAttribute="top" secondItem="oQd-kP-Xdi" secondAttribute="bottom" constant="20" id="kwG-w1-6jo"/>
+                            <constraint firstItem="MXD-Xa-qSy" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="uRz-th-nAy"/>
+                            <constraint firstItem="O54-6W-djk" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="xeH-vQ-Cmp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kakaoLoginButton" destination="NIf-M2-CUm" id="4sP-jr-VBZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

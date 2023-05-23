@@ -16,13 +16,37 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnf-jh-OWK">
+                                <rect key="frame" x="162.33333333333334" y="408.66666666666669" width="68.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <connections>
+                                    <segue destination="6dt-d7-vkL" kind="show" id="tKH-pf-PRb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qnf-jh-OWK" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="2ku-tV-vax"/>
+                            <constraint firstItem="qnf-jh-OWK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cFp-oJ-Wpd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="Yce-VH-ezw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginVC" id="6dt-d7-vkL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GSi-sJ-MG1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7id-Pr-Lb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-2"/>
         </scene>
     </scenes>
     <resources>
