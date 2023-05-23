@@ -4,19 +4,27 @@
 //
 
 import UIKit
+import KakaoSDKAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        DispatchQueue.main.asyncAfter(wallDeadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(wallDeadline: .now() + 1) {
             guard let mainVC = UIStoryboard.main.instantiateViewController(withIdentifier: "homeVC") as? HomeViewController else {return}
             
             self.setKeyWindowForUINavigationController(mainVC)
+        }
+    }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                _ = AuthController.handleOpenUrl(url: url)
+            }
         }
     }
 
@@ -48,6 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    
 
 }
 
