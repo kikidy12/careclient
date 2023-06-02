@@ -44,7 +44,7 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O54-6W-djk">
                                 <rect key="frame" x="147.66666666666666" y="274" width="98" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="토스로그인"/>
+                                <buttonConfiguration key="configuration" style="plain" title="애플로그인"/>
                                 <connections>
                                     <action selector="snsLoginAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Nnz-BA-AuS"/>
                                 </connections>
@@ -63,9 +63,6 @@
                             <constraint firstItem="O54-6W-djk" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="xeH-vQ-Cmp"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="kakaoLoginButton" destination="NIf-M2-CUm" id="4sP-jr-VBZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
