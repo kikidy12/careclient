@@ -14,6 +14,7 @@
 		990AB3662A1C8C3800ED2351 /* NaverSNSLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB3652A1C8C3800ED2351 /* NaverSNSLogin.swift */; };
 		990AB3682A1C8FE100ED2351 /* KakaoSNSLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB3672A1C8FE100ED2351 /* KakaoSNSLogin.swift */; };
 		990AB36A2A1C97DC00ED2351 /* SNSLoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB3692A1C97DC00ED2351 /* SNSLoginDelegate.swift */; };
+		990AB36C2A1CA50000ED2351 /* GoogleSNSLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB36B2A1CA50000ED2351 /* GoogleSNSLogin.swift */; };
 		990B8B9E2A1B48C60025A9CF /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8B872A1B48C60025A9CF /* APIRouter.swift */; };
 		990B8BA12A1B48C60025A9CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8B8B2A1B48C60025A9CF /* User.swift */; };
 		990B8BAA2A1B48C70025A9CF /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B8B942A1B48C60025A9CF /* AlamofireManager.swift */; };
@@ -66,6 +67,7 @@
 		990AB3652A1C8C3800ED2351 /* NaverSNSLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverSNSLogin.swift; sourceTree = "<group>"; };
 		990AB3672A1C8FE100ED2351 /* KakaoSNSLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSNSLogin.swift; sourceTree = "<group>"; };
 		990AB3692A1C97DC00ED2351 /* SNSLoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSLoginDelegate.swift; sourceTree = "<group>"; };
+		990AB36B2A1CA50000ED2351 /* GoogleSNSLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSNSLogin.swift; sourceTree = "<group>"; };
 		990B8B872A1B48C60025A9CF /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		990B8B8B2A1B48C60025A9CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		990B8B942A1B48C60025A9CF /* AlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				990AB3652A1C8C3800ED2351 /* NaverSNSLogin.swift */,
 				990AB3672A1C8FE100ED2351 /* KakaoSNSLogin.swift */,
 				990AB3692A1C97DC00ED2351 /* SNSLoginDelegate.swift */,
+				990AB36B2A1CA50000ED2351 /* GoogleSNSLogin.swift */,
 			);
 			path = SnsLogin;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				990AB3662A1C8C3800ED2351 /* NaverSNSLogin.swift in Sources */,
 				990B8B9E2A1B48C60025A9CF /* APIRouter.swift in Sources */,
 				99B4FBBC2A1B180100CD50E7 /* HomeViewController.swift in Sources */,
+				990AB36C2A1CA50000ED2351 /* GoogleSNSLogin.swift in Sources */,
 				99B4FBB62A1B13EB00CD50E7 /* Extension+Views.swift in Sources */,
 				990AB3622A1C560500ED2351 /* LoginViewController.swift in Sources */,
 				990B8BA12A1B48C60025A9CF /* User.swift in Sources */,
@@ -666,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -720,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

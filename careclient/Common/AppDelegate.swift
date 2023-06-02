@@ -6,6 +6,7 @@
 import UIKit
 import KakaoSDKCommon
 import NaverThirdPartyLogin
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,9 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         naverInstance?.consumerSecret = kConsumerSecret
         naverInstance?.appName = kServiceAppName
         
-        
         return true
     }
+    
 
     // MARK: UISceneSession Lifecycle
 

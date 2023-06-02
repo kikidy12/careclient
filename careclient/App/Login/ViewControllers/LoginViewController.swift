@@ -10,6 +10,7 @@ import NaverThirdPartyLogin
 import Alamofire
 
 class LoginViewController: UIViewController {
+
     
     enum SnsLoginButtonTag: Int {
         case kakao = 0
@@ -17,8 +18,6 @@ class LoginViewController: UIViewController {
         case google = 2
         case apple = 3
     }
-    
-    @IBOutlet weak var kakaoLoginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +37,9 @@ class LoginViewController: UIViewController {
             NaverSNSLogin.shared.login()
             break
         case .google:
+            GoogleSNSLogin.shared.delegate = self
+            GoogleSNSLogin.shared.currentVC = self
+            GoogleSNSLogin.shared.login()
             break
         case .apple:
             break

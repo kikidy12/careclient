@@ -12,6 +12,7 @@ target 'careclient' do
   pod 'KakaoSDKAuth'  # 사용자 인증
   pod 'KakaoSDKUser'  # 카카오 로그인, 사용자 관리
   pod 'naveridlogin-sdk-ios' # 네이버 로그인
+  pod 'GoogleSignIn'
 
   target 'careclientTests' do
     inherit! :search_paths
