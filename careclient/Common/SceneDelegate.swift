@@ -6,6 +6,7 @@
 import UIKit
 import KakaoSDKAuth
 import NaverThirdPartyLogin
+import GoogleSignIn
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -29,6 +30,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         NaverThirdPartyLoginConnection.getSharedInstance().receiveAccessToken(url)
+        
+        GIDSignIn.sharedInstance.handle(url)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
